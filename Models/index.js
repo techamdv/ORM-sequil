@@ -26,7 +26,7 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 db.Contact  = require('./contact')(sequelize,DataTypes);
 db.User = require('./user')(sequelize,DataTypes,Model);
-db.User.hasOne(db.Contact, {foreignKey: 'userID',} ); // A HasOne B
+db.User.hasOne(db.Contact ); // A HasOne B
 db.Contact.belongsTo(db.User); // A BelongsTo B
 //console.log("my result for user : "+ typeof(db.User));
 db.sequelize.sync({force:true});

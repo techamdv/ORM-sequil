@@ -1,0 +1,6 @@
+{
+    "html.autoClosingTags": false,
+    "html.autoCreateQuotes": false,
+    "html.format.enable": false,
+    "html.suggest.html5": false
+}
